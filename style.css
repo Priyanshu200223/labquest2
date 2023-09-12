@@ -31,7 +31,7 @@ to{
 }
 .fade-in-left{
     opacity: 0;
-    animation: fadeinleft 1s ease forwards;
+    animation: fadeinleft 1.5s ease forwards;
 }
 @keyframes fadeinright{
     from{
@@ -45,7 +45,7 @@ to{
     }
 .fade-in-right{
     opacity: 0;
-    animation: fadeinright 1s ease forwards;
+    animation: fadeinright 1.5s ease forwards;
 }
 @keyframes zoomin{
     from{
@@ -57,4 +57,24 @@ to{
 }
 .zoom-in{
     animation: zoomin 1s ease forwards;
+}
+.chestsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.after{
+    display: flex;
+    width: 4rem;
+    height: 4px;
+    background-color: #aabbd7;
+    align-items: center;
+    justify-content: center;
+}
+.empty{
+    width: 50%;
 }
