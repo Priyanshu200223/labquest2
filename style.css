@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Krub', sans-serif;
+    margin-right: 0;
+}
+.centrekr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.head{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+   font-size: 6rem;
+}
+@keyframes fadeinleft{
+from{
+    opacity: 0;
+    transform: translateX(-500px);
+}
+to{
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+.fade-in-left{
+    opacity: 0;
+    animation: fadeinleft 1s ease forwards;
+}
+@keyframes fadeinright{
+    from{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }
+.fade-in-right{
+    opacity: 0;
+    animation: fadeinright 1s ease forwards;
+}
+@keyframes zoomin{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.zoom-in{
+    animation: zoomin 1s ease forwards;
+}
